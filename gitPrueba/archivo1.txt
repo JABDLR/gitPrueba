@@ -1,2 +1,0 @@
-Hola es el primer archivo.
-Modificando el Primer archivo de en la primera rama.
