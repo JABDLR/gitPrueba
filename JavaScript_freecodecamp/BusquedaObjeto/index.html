@@ -1,0 +1,31 @@
+<script>
+    /*
+    Utilizaremos un objeto como mecanismo de busqueda, aprovechando sus propiedades 
+    y el acceso por corchetes.
+    */
+
+    //Funcion para buscar el nombre e un elemto quimico dado su simbolo.
+    function buscarElemtoQuimico(simbolo){
+        //Creamos el objeto llamado Simbolos Quimicos
+        var simbolosQuimicos = {
+            "Al": "Aluminio",
+            "S" : "Azufre",
+            "Cl" : "Cloro",
+            "He" : "Helio",
+            "B" : "Boro",
+            "Li" : "Litio"
+        };
+
+        //Retornara la propiedad del elemto
+        return simbolosQuimicos[simbolo];
+    }
+
+    //Pruebas por pantalla
+    console.log(buscarElemtoQuimico("Al"));
+    console.log(buscarElemtoQuimico("S"));
+    console.log(buscarElemtoQuimico("Cl"));
+    console.log(buscarElemtoQuimico("He"));
+    console.log(buscarElemtoQuimico("B"));
+    console.log(buscarElemtoQuimico("Li"));
+
+</script>

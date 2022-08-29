@@ -1,0 +1,174 @@
+<script>
+    /*
+                                    //OBJETOS COMPLEJOS//
+            
+    Un pequeño acercamiento a los objeto complejos, utilizadno la mayoria de los conceptos y metodos
+    antes vistos en el curso
+    */
+
+                                        //ARRAY DE OBJETOS//
+/*
+    //Se crea una lista de objetos, los Objetos son detalles de una orden de pizza
+    var miOrdenPizzas = [ 
+
+        //Primer objeto
+        {
+            //atributos de la orden de la primera pizza, se separan con "comas ,"
+            "tipo" : "margarita",
+            "tamaño" : "individual",
+            "precio" : 5.64,
+            //Se crea una lista dentro del objeto
+            "toppings" : [
+                "extra queso",
+                "champiñones",
+                "piña"
+            ], 
+            "paraLLevar" : true
+        }, //Se separan los objetos utilizando "comas ,"
+
+        //Segundo objeto
+        {
+            "tipo" : "cuatro quesos",
+            "tamaño" : "familiar",
+            "precio" : 18.34,
+            "toppings" : [
+                "extra queso",
+                "pimenton"
+            ], 
+            "paraLLevar" : false
+        },
+
+        //Tercer objeto
+        {
+            "tipo" : "napolitana",
+            "tamaño" : "individual",
+            "precio" : 6.78,
+            "toppings" : [], 
+            "paraLLevar" : true
+        }
+    ]
+
+    //Acceso al objeto, pruebas por pantalla
+
+    //Acceso a los objetos dentro de la lista
+    console.log(miOrdenPizzas[0]);
+    console.log(miOrdenPizzas[1]);
+    console.log(miOrdenPizzas[2]);
+
+    //Acceso a datos del objeto dentro de la lista usando notación de punto
+    console.log(miOrdenPizzas[0].tipo);
+    console.log(miOrdenPizzas[1].tipo);
+    console.log(miOrdenPizzas[2].tipo);
+
+    //Acceso a datos del objeto dentro de la lista  usando corchetes
+    console.log(miOrdenPizzas[0]["toppings"]);
+    console.log(miOrdenPizzas[1]["toppings"]);
+    console.log(miOrdenPizzas[2]["toppings"]);
+*/
+
+/*
+                                        //OBJETOS ANIDADOS//
+    
+    //Creamos el objeto anidado
+
+    //Objeto principal
+    miReceta = {
+        //Atributos
+        "descripcion" : "mi postre favorito",
+        "costo" : 15.6,
+        "ingredientes" : { //Segundo objeto (objeto anidado)
+
+            //tercer objeto (objeto anidado "doble")
+            "masa" : {
+                "harina" : "100 grs",
+                "sal" : "1 cucharadita",
+                "agua" : " 1 taza"
+            },
+
+            //cuarto objeto (objeto anidado "doble")
+            "cobertura" : {
+                "azucar" : "120 grs",
+                "chocolate" : "4 cucharaditas",
+                "mantequilla" : "200 grs"
+            }
+        }
+    };
+
+
+    //Acceso a datos por consola
+
+    //acceso al objeto principal
+    console.log(miReceta);
+
+    //acceso al objeto principal || atributo descripcion
+    console.log("descripcion " + miReceta.descripcion);
+    //acceso al objeto principal || atributo costo
+    console.log("costo " + miReceta.costo);
+    //acceso al objeto principal || atributo ingredientes
+    console.log(miReceta.ingredientes);
+
+
+    //Acceso a los atributos del (Objeto anidado)
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo masa (objeto)
+    console.log(miReceta.ingredientes.masa);
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo cobertura (objeto)
+    console.log(miReceta.ingredientes.cobertura);
+
+    //Acceso a los atributos del (Objeto doble anidado) masa
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo masa (objeto) || atributo harina
+    console.log(miReceta.ingredientes.masa.harina);
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo masa (objeto) || atributo sal
+    console.log(miReceta.ingredientes.masa.sal);
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo masa (objeto) || atributo agua
+    console.log(miReceta.ingredientes.masa.agua);
+
+    //Acceso a los atributos del (Objeto doble anidado) cobertura
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo cobertura (objeto) || atributo harina
+    console.log(miReceta.ingredientes.cobertura.azucar);
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo cobertura (objeto) || atributo chocolate
+    console.log(miReceta.ingredientes.cobertura.chocolate);
+    //acceso al objeto principal || atributo ingredientes (objeto) || atributo cobertura (objeto) || atributo mantequilla
+    console.log(miReceta.ingredientes.cobertura.mantequilla);
+*/
+    
+                                        //ARREGLOS ANIDADOS//
+
+    //Arreglo anidando objetos y arreglos
+    var misplantas = [ //Se crea el arreglo 
+
+        //Se crea el primer objeto
+        {
+            "tipo" : "flores",
+            "listas" : [ //Arreglo dentro del objeto
+                "rosas",
+                "tulipanes",
+                "dientes de leon"
+            ]
+        },
+
+        //Se crea el legundo objeto
+        {
+            "tipo" : "arboles",
+            "listas" : [ //Arreglo dentro del objeto
+                "abeto",
+                "pino",
+                "abdeul"
+            ]
+        }
+    ];
+
+    console.log(misplantas[0]);
+    console.log(misplantas[1]);
+
+    console.log(misplantas[0].listas);
+    console.log(misplantas[1].listas);
+
+    console.log(misplantas[0].listas[0]);
+    console.log(misplantas[0].listas[1]);
+    console.log(misplantas[0].listas[2]);
+
+    console.log(misplantas[1].listas[0]);
+    console.log(misplantas[1].listas[1]);
+    console.log(misplantas[1].listas[2]);
+
+</script>

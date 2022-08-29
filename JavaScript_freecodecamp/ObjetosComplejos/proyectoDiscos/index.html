@@ -1,0 +1,58 @@
+<script>
+                            //PROYECTO DISCOS//
+
+    //Creamos nuestro objeto "raiz" Coleccion de Discos
+    var coleccionDiscos = {
+
+        //Creamos nuestro objeto "anidado" disco: 0001
+        0001 : {
+            tituloAlbum : "Bee Gees Greatest",
+            artista : "Bee Gees",
+            canciones : [
+                "Stayin Alive"
+            ]
+        },
+
+        //Creamos nuestro objeto "anidado" disco: 0002
+        0002 : {
+            tituloAlbum : "ABBA Gold"
+        }
+    }
+
+    //Funciones
+
+    //No se logro esta funcion
+    function nuevoDisco(disco, id, propiedad, valor){
+        disco[id][propiedad] = valor;
+    }
+
+    function eliminarDisco(disco, id){
+        delete disco[id];
+    }
+
+    function cambiarPropiedad(disco, id, propiedad, valor){
+        disco[id][propiedad] = valor;
+    }
+
+    function nuevaCancion(disco, id, valor){
+        disco[id]["canciones"] = disco[id]["canciones"] || [];
+        disco[id]["canciones"].push(valor);
+    }
+
+    //Pruba
+    lista = ["Cancion 1", "Cancion 2", "Cancion 3"]
+    cambiarPropiedad(coleccionDiscos, 0002, "tituloAlbum", "Nuevo artista");
+    nuevaCancion(coleccionDiscos, 0002, "Cancion 1");
+    nuevaCancion(coleccionDiscos, 0002, "Cancion 2");
+    nuevaCancion(coleccionDiscos, 0002, "Cancion 3");
+
+    eliminarDisco(coleccionDiscos, 0001);
+
+    //nuevoDisco(coleccionDiscos, 0003, "tituloAlbum", "Nuevo");
+    
+    
+    console.log(coleccionDiscos);
+
+
+
+</script>

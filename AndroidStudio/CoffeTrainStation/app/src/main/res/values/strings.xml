@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">CoffeTrainStation</string>
+    <string name="AppName">Coffe Train Station</string>
+    <string name="PD_UserN">User Name</string>
+    <string name="PD_Password">Contraseña</string>
+    <string name="Act_Entrar">Entrar</string>
+    <string name="Act_FgPassword">Olvide mi contraseña</string>
+    <string name="Act_Registrar">Registrar</string>
+    <string name="Saludo">Bienvenido!</string>
+    <string name="RegistroC_Indicaciones">Ingrese su Información</string>
+    <string name="PD_Names">Nombre(s)</string>
+    <string name="PD_ApellidoP">Apellido</string>
+    <string name="PD_email">Correo electrónico</string>
+    <string name="PD_phone">Número de celular</string>
+    <string name="RegistroC_IndPassword">La contraseña debe ser minimo de 8 caracteres y debe incluir mayusculas, minusculas y números.</string>
+    <string name="PD_passwordCon">Confirmar Contraseña</string>
+    <string name="CB_passwocorret">Contraseña Correcta</string>
+    <string name="RecPasW_Title">Recuperar Contraseña</string>
+    <string name="RecPasW_Indicaciones">Escriba la direccion de correo electronico ligado a la cuenta, le llegara un correo con su contraseña</string>
+    <string name="Act_RecPassword">Recuperar Contraseña</string>
+    <string name="Act_Cancelar">Cancelar</string>
 </resources>

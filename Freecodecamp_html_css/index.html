@@ -1,0 +1,231 @@
+<!--Comando para ajustar el contenido al tamaño de tu ventana o revertir a una sola linea: Alt z-->
+
+<!DOCTYPE html>  <!--Esta etiqueta indica al navegador que version de
+HTML o XML se uso para escribir el documeto. Es una declaración, no una etiqueta.
+Document Type Declaration "DTD"-->
+
+<!--lang="en": le indica al navegador que lenguaje usa la página-->
+<html lang="es">
+<!--
+    <head></head>: Etiqueta donde se personaliza la aplicación, se colocan los archivos que utiliza y 
+                contien metadatos
+    <title></title>: Etiqueta que coloca en la pestaña del navegador el nombre de la página,
+                    se recoienda que sea descriptiva para ayudar al navegador a encontrar tu página
+-->
+<head>
+    <title>App de gatos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> <!--<h1>: Encabezado, nivel mayor del encabezado, con formato ya establecido-->
+        App web de gatos
+    </h1>
+
+    <main>
+        <!--
+            <a href=""></a>: Etiqueta de enlace, se indica que lo que contiene tendra un enalce a otra pagina web
+                    atributo href: se coloca el enlace al cual se quiere ir.
+                    atributo target: indica la manera en que se accedera al enlace
+                    atributo rel="noopener noreferrer": nos permite a evitar un ataque Tabnabbing
+        -->
+        <a href="https://pixabay.com/es/images/search/gatito/" target="_blank" rel="noopener noreferrer">
+            <h2>Imagenes de gatos</h2>
+        </a>
+
+        <!--<p>: Parrafo-->
+        <p>Haz click aqui para ver imagenes de gatos</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sint quos velit ut cum, dolore assumenda eius totam nostrum deleniti corporis cupiditate, doloremque optio culpa corrupti maxime laborum rem numquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repudiandae quas, iure fugiat eaque quia totam possimus illo et veniam magni corrupti voluptatem repellat quisquam rem inventore, accusamus saepe qui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque deserunt officia illum vero ut atque ipsam perspiciatis voluptatibus beatae dolorem, optio mollitia harum repellat doloribus dolore similique excepturi quis quia!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, dicta ipsa perspiciatis facere laboriosam, nihil laudantium fugit officia recusandae vel quos, numquam eaque nesciunt assumenda culpa velit eos dignissimos ex!</p>
+
+        <!--img: Etiqueta que indica el elemento imagen
+            src: Atributo que intica la ruta donde es alojada la imagen, puede ser un archivo local o externa
+            alt:    Atributo, es una descripcción de la imagen que se coloca en caso que el archivo no se descarge o 
+                    sea visualizado de otra forma que no sea por medio de un browser-->
+
+        <br>
+        <!--Creacion de indice con vinculos internos-->
+        
+        <a href="#P1">Parrafo 1</a>
+        <a href="#P2">Parrafo 2</a>
+        <a href="#P3">Parrafo 3</a>
+        <a href="#P4">Parrafo 4</a>
+
+        <h3 id="P1">Parrafo 1</h3>
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+        <h3 id="P2">Parrafo 2</h3>
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+        <h3 id="P3">Parrafo 3</h3>
+        <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+
+        <h3 id="P4">Parrafo 4</h3>
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        <hr>
+
+        <div>
+            <!--Listas no ordenadas, se visualizaran como viñetas-->
+            <h3>Listas sobre gatos</h3>
+            <p>Cosas que los gatos <em>aman</em>: </p>
+
+            <!--
+                <ul></ul>: Etiqueta que indica que es una lista desordenada (Unordered List), se presenta en forma determinada con viñetas
+            -->
+            <hr>
+            
+            <ul>
+                <!--
+                    <li></li>: objeto de lista, indica un elemto de una lista (List item).
+                -->
+                <li>Menta gatuna</li>
+                <li>Apunradores laser</li>
+                <li>Comida de gatos</li>
+                <li> <s>Helados frody</s> </li>
+                
+            </ul>
+        </div>
+
+        <!--Imagen con enlace interno-->
+        <!--Enlace a la pagina web de Helados frody-->
+        <a href="https://www.frody.com.mx/?msclkid=b714ff2bc85111eca2a9c1270ccd0cbd" target="_blank" rel="noopener noreferrer">
+            <img src="img/HeladosFrody.jpg" alt="HeladosFrody">
+        </a>
+
+        <div>
+            <!--<strong></strong>: Etiqueta que resalta en negritas el texto que encierra.-->
+            <p>Cosas que los gatos <strong>odian</strong>: </p>
+
+            <!--
+                <ol></ol>: Listas Ordenadas (Order List), tiene enumeración
+            -->
+            <ol>
+                <li>Tratamientos antipulgas</li>
+                <li>Truenos</li>
+                <li>Otros gatos</li>
+            </ol>
+        </div>
+        
+        <!--Imagen con enlace externo-->
+        <!--Enlace a un enlace muerto: href="#"-->
+        <a href="#">
+            <img src="http://bit.ly/fcc-relaxing-cat" alt="Gato relajado">
+        </a>
+
+        <!--
+            <form action=""></form>: Etiqueta que indica que se utilizara un formulatio, el atributo: action="",
+                                    le indica la accioln al enviar el formularia. Usualmete se coloca la ruta a otro 
+                                    archivo.
+            <input type="text">: Etiquta que recibe una respuesta del usuario, dependiedo de su atributo 
+                                "type": sera el tipo de respuesta que se espera.
+                                placeholder="": atributo que coloca un texto dontro del campo para ser llenado, se quita 
+                                required: atributo que indica que el campo no puede estar vacio
+                                                al introducir texto
+            <button type="submit"></button>: Etiqueta que indica que se coloca un boton, el atributo: type="submit",
+                                            indica que se enviara el formulario.
+            <input type="radio" name="" id="">: Etiqueta que indica que l   a respuesta del usuario sera proveniente
+                                                de un boton de texto.
+                                                atributo name="": nos permite agrupar elemtos que tienen un mismo 
+                                                contexto, de esta manera obligamos a solo poder seleccionar un boton
+                                                de tipo radio, que tengan el mismo contexto
+            <label for=""></label>: Etiqueta que nos permite tener en el mismo nivel cualquier elemeto que encierra.
+            <input type="checkbox" name="Respuestas_Imp"></label>: Etiqueta que indica que que la respuesta vendra de n
+                                                una casilla de verificacion.
+                                                Aunque se tenga un grupo de este tipo de etiquetas con el mismo nombre
+                                                "name", podran seleccionarse varias por la naturaleza del tipo de elemto
+
+            Atributo checked: selecciona la casilla o circulo por default donde se haya colocado este elemento
+            value="": Es el valor que sera enviado al servidor al seleccionar cierto elemento
+
+
+
+        -->
+        <form action="/enviar-respuesta.html">
+            <input type="text" placeholder="Te gustan los gatos?" required><br>
+
+            <label for="SiG"><input type="radio" name="teG" id="SiG" checked>Si tengo Gatos</label><br>
+
+            <label for="noG"><input type="radio" name="teG" id="noG">No tengo Gatos</label><br><br>
+
+            <label for="alergico">
+                <input type="checkbox" name="Respuestas_Imp" value="alergico">Soy alergico
+            </label><br>
+
+            <label for="mayor edad">
+                <input type="checkbox" name="Respuestas_Imp" checked value="+18">Soy Mayor de edad
+            </label><br>
+
+            <label for="responsable">
+                <input type="checkbox" name="Respuestas_Imp" value="Responsable">Soy responsable
+            </label><br>
+
+            <button type="submit">Enviar</button><br>
+        </form>
+
+</main>
+
+<footer>
+    <p><small> Sin derechos de autor
+        <a href="https://pixabay.com/es/images/search/gatito/">Sigue viendo gatitos</a>
+    </small></p>
+</footer>
+
+</body>
+</html>
+
+<!--
+    ELEMETOS: componetes basico de un archivo.html "Element"
+    ETIQUETAS: nos permiten definir los elemtos en un archivo.html "Tag"
+
+    Los <>: representan las etiquetas en un archivo html, dentro de ellas se define
+    el tipo de elemento <tipoElemento> contenido (Elementos anidados)</tipoElemento> 
+    Etiquete de apertura - Etiqueta de cierre.
+    Algunas etiquetas no necesitan elemento de cierre
+
+    <html> </html>: Elemto raiz, todoslos elemtos que formen parte de la página estan contenido
+                    dentro de esta etiqueta
+    
+    <head> </head>: Archivos externos, personalización de la página
+    <body> </body>: Estructura principal del programa
+
+    <h1></h1>:  Encabezados, tiene un nivle jerarquico: el mayor el 1 y menor el 6, cuentan
+                con un formarto preestablecido. Solo hay 6 niveles.
+
+    <main></main>: Este elemento le indica al navegador donde esta nuestro contenido principal de la pagina web.
+
+    <img src="" alt="">:    Etiqueta que indica que se utilizara una imagen.
+                            atributo src="": indica la direccion donde le aloja la imagen, puede ser local o externa
+                            alt:    Atributo, es una descripcción de la imagen que se coloca en caso que el archivo no se 
+                                    descarge o sea visualizado de otra forma que no sea por medio de un browser
+
+    <a href=""></a>: Etiqueta de enlace, se indica que lo que contiene tendra un enalce a otra pagina web
+                    atributo href: se coloca el enlace al cual se quiere ir.
+                    atributo target: indica la manera en que se accedera al enlace
+                    atributo rel="noopener noreferrer": nos permite a evitar un ataque Tabnabbing
+
+                    Enlaces Muertos href="#": sirven para indicar que la pagina a donde enlazamos aun no se desarrolla
+                                            al pulsar sobre ellos se dirige a la misma pagina donde son colocados
+
+    <ul></ul>: Etiqueta que indica que es una lista desordenada (Unordered List), se presenta en forma determinada con viñetas
+
+    <li></li>: objeto de lista, indica un elemto de una lista (List item).
+    
+    Atributo id: se le asigna un identificador (Nombre) unico en la pagina web a un elemento
+
+    <ol></ol>: Listas Ordenadas (Order List), tiene enumeración
+
+                                    ETIQUETAS PARA EL FORMATO DEL TEXTO
+    <strong></strong>: Etiqueta que resalta en negritas el texto que encierra.
+    <em></em>: Etiqueta que coloca en negritas el texto que encierra.
+    <s></s>: Etiqueta que "tacha" el texto que encierra
+    <hr>: Etiqueta que coloca una linea horizontal en la página web. Se utiliza para separar secciones
+    <br>: Etiqueta que realiza un salto de linea dentro de la página web.
+    <div></div>: Es un contenedor generico, se crean estructuras y se pueden personalizar utilizando CSS
+    <footer></footer>: Etiqueta que coloca una sección de pie de página.
+    <small></small>: Etiqueta que su contenido lo muestra más pequeño
+-->

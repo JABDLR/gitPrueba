@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ColorMyViews de JB</string>
+    <string name="Caja_uno">" Caja uno"</string>
+    <string name="Caja_dos">" Caja dos"</string>
+    <string name="Caja_tres"> Caja tres</string>
+    <string name="Caja_cuatro"> Caja cuatro</string>
+    <string name="Caja_cinco"> Caja cinco</string>
+</resources>

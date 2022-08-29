@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "632570217682",
+    "project_id": "coffetrainstation",
+    "storage_bucket": "coffetrainstation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632570217682:android:7fb124c52b6885cc13590b",
+        "android_client_info": {
+          "package_name": "mx.ipn.escom.SEFMD.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632570217682-leo132fg2msu4qrgcelr0etq17r4p2eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN7BDhnotmJVVsHeeV3cBbNWXaMONGUkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632570217682-leo132fg2msu4qrgcelr0etq17r4p2eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

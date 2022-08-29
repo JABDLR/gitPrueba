@@ -1,0 +1,169 @@
+<script>
+    console.log("Les presenro los comentarios");
+    console.log("Comentario de una sola linea utilizan : //comentario ");
+    console.log("Comentario de varias lineas utilizan : /*comentario*/ ");
+     //Comentario de una sola linea
+    /*
+        Esto es un cometario de varias lineas.
+        Linea 1
+        Linea 2
+        Linea 3
+        .
+        .
+        .
+        Linea n
+    */
+
+    /*Tipos de datos
+    undefinend: no existe un valor asignado
+    null: nullo, objeto no existe
+    boolean: valores de verdadero y falso
+    string: Cadenas de caracteres
+    symbol:
+    number: numeros
+    object: estructura que permite relacionar funcione y propiedades
+   */
+
+  /*
+    Variables: crean un espacio de memoria donde almacenan un valor
+    se utiliza la palabra var nombreVariable
+  */
+  console.log("Variables ");
+
+  console.log("Se pueden asignar los distintos tipos de valores");
+
+  var miVariable = "Soy la variable llamada miVariable"
+  console.log(miVariable);
+
+  //Variable con numero
+  var miNumero = 16;
+  console.log(miNumero);
+
+  //Variable con numero negativo
+  var miNumeroNegativo = -16;
+  console.log(miNumeroNegativo);
+
+  //Variable con numero decimal
+  var miNumeroDecimal = 16.4568;
+  console.log(miNumeroDecimal);
+
+  //Variable con numero decimal Negativo
+  var miNumeroDecimalNegativo = 16.4568;
+  console.log(miNumeroDecimalNegativo);
+
+  //Variable con cadena
+  var miString = "Soy una cadena";
+  console.log(miString);
+
+  //Variable con booleano
+  var miBooleanoTrue = true;
+  var miBooleanoFalse = false;
+  console.log(miBooleanoTrue);
+  console.log(miBooleanoFalse);
+
+  //Opercaión de asignacion "="
+  var exampleA; // Varible creada sin haber asignado un valor, variable no inicializada por default se asigna undefined
+  var exampleB = 1; //Variable creada y se asigna un valor con el operador de asignación
+
+  console.log(exampleA); 
+  console.log(exampleB);
+
+  /*
+  Resulatado de la consola 
+  console.log(exampleA); => undefined
+  console.log(exampleB); => 1
+
+  undefined: La variable existe pero no tiene un valor asignado
+  */
+
+  //Asignando un valor con el operador de asignación
+  exampleA = "Asignando un valor"
+  console.log(exampleA);
+
+
+  //Asignacion de una variable
+  exampleB = exampleA; //Asignando el valor de una variable a otra
+  console.log(exampleB);
+
+  /*
+  Para asignar una variable tipo string, se pueden utilizar dos tipos de indicadores
+  Se puede utilizar: "" o '', pero se debe ser cogruente.
+  */
+  exampleCadenaA = "Asignando la caden con doble comilla";
+  exampleCadenaB = 'Asignando la caden comilla simple';
+
+  console.log(exampleCadenaA);
+  console.log(exampleCadenaB);
+
+exampleCadenaA = "Escapando comillas dobles \"\", se utiliza el simbolo \\ + \" ";
+  exampleCadenaB = 'Escapando comillas \'\', se utiliza el simbolo \\ + \' ';
+
+  console.log(exampleCadenaA);
+  console.log(exampleCadenaB);
+
+  /*
+    Secuencias de escape:
+    \"  Comilla doble
+    \'  Comilla simple
+    \\  Barra invertida
+    \n  Linea nueva
+    \r Retorno del carro
+    \t  Tabulacion
+    \b  Retroceso
+    \f  Salto de página
+  */
+
+  //Areglos
+
+  //Se pueden asignar cualquier tipo de variables
+  var ArregloA = [12.54, "Hola chicos", 85];
+  console.log(ArregloA); //Se muestra el contenido del arreglo
+  console.log(ArregloA[0]); //Se muestra el dato 1 del arreglo
+  console.log(ArregloA[1]); //Se muestra el dato 2 del arreglo
+  console.log(ArregloA[2]); //Se muestra el dato 3 del arreglo
+
+  //Asignar nuevos valores
+  ArregloA[0] = "Primer elemnto";
+  ArregloA[1] = 2;
+  ArregloA[2] = true;
+  console.log(ArregloA); //Se muestra el contenido del arreglo
+  
+
+  //Arreglos anidados o multidimencionales
+  var ArregloB = [["Primer", "arreglo", "anidado"], [2, "do", true], ["asf", 8541.35, false]];
+
+  //Acceso
+  console.log(ArregloB); //Se muestra el contenido del arreglo
+  console.log(ArregloB[0]); //Se muestra el dato 1 del arreglo
+  console.log(ArregloB[1]); //Se muestra el dato 2 del arreglo
+  console.log(ArregloB[2]); //Se muestra el dato 3 del arreglo
+  console.log(ArregloB[0][0]); //Se muestra el arreglo 1 con el primer dato anidado
+  console.log(ArregloB[0][1]); //Se muestra el arreglo 1 con el segundo dato anidado
+  console.log(ArregloB[0][2]); //Se muestra el arreglo 1 con el tercer dato anidado
+  console.log(ArregloB[1][0]); //Se muestra el arreglo 2 con el primer dato anidado
+  console.log(ArregloB[1][1]); //Se muestra el arreglo 2 con el segundo dato anidado
+  console.log(ArregloB[1][2]); //Se muestra el arreglo 2 con el tercer dato anidado
+
+  //Asignacion de un nuevo dato
+  ArregloB[2] = ["Tercer", "arreglo", "anidado"];
+  console.log(ArregloB[2]);
+
+  //Metodo push: perimite agregar elemtos de forma ordenada (al final) a un arreglo:
+  ArregloB.push(["Cuarto", "arreglo", "anidado"]);
+  console.log(ArregloB);
+
+  //Metodo pop: Elimina el ultimo elemto de un arreglo y ademas, puede retornar el valor:
+  arregloAux = ArregloB.pop();
+  console.log(ArregloB);
+  console.log("El valor removido es: " + arregloAux);
+
+  //Metodo shift: Elimina el primer elemto de un arreglo:
+  arregloAux = ArregloB.shift();
+  console.log(ArregloB);
+  console.log("El valor removido es: " + arregloAux);
+
+  //Metodo unshift: agrega un elemto al rpincipio de un arreglo
+  ArregloB.unshift(["Añadiendo", "utilizando", "unshirt"]);
+  console.log(ArregloB);
+
+</script>
